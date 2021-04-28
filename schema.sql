@@ -55,10 +55,7 @@ CREATE TABLE titles (
 	title VARCHAR (40) NOT NULL,
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
-	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-	PRIMARY KEY (emp_no)
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
-
--- Querying the database 
-SELECT * FROM departments;
-
+-- whenever you make changes to the database, highlight upwards from COMMIT line then run
+COMMIT; 
